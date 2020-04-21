@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import selectSystem from '../data/select-system';
@@ -18,9 +18,9 @@ export default function Exercises(props) {
     });
 
     return (
-        <div className='listBox'>
+        <>
             <h2>{props.system}</h2>
             {exercisesList}
-        </div>
+        </>
     );
 }

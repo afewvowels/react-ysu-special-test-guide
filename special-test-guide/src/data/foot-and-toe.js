@@ -15,7 +15,7 @@ export default [
         "Implications": "Determining patient's arch type and position of navicular non-weight bearing and weight bearing.",
         "Modifications/Comments": "N/A",
         "Evidence": "N/A",
-        "Evidence Resource": ""
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Windlass Test",
@@ -37,7 +37,7 @@ export default [
             "Sensitivity: 24%",
             "Specificity: 100%"
         ],
-        "Evidence Resource": "Book"
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Navicular Drop Test",
@@ -53,14 +53,14 @@ export default [
         ],
         "Positive Test": "Navicular Drop between seated and standing position.",
         "Implications": [
-            ">2.3 cm = very flexible",
-            "1.8-2.3 = flexibile",
-            "0.6-1.8 = normal",
-            "0.0-0.6 cm = rigid"
+            "> 2.3cm = Very Flexible.",
+            "1.8cm - 2.3cm = Flexibile.",
+            "0.6 - 1.8cm = Normal.",
+            "0.0cm - 0.6cm = Rigid."
         ],
         "Modifications/Comments": "Measure of navicular drop is relative to pronation during gait.",
         "Evidence": "N/A",
-        "Evidence Resource": ""
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Long Bone Compression Test/Compression (Squeeze Test)",
@@ -76,7 +76,7 @@ export default [
             "Sensitivity: 30%",
             "Specificity: 94%"
         ],
-        "Evidence Resource": "book"
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Tinels Sign for Tarsal Tunnel",
@@ -89,7 +89,7 @@ export default [
         "Implications": "Posterior Tibial Nerve compression (Tarsal Tunel Syndrome).",
         "Modifications/Comments": "Common finding is pes planus in which excessive pronation increases the traction placed on the nerve.",
         "Evidence": "N/A",
-        "Evidence Resource": ""
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Interdigital Neuroma Test/Pencil Test",
@@ -102,7 +102,7 @@ export default [
         "Implications": "Interdigital Neuroma.",
         "Modifications/Comments": "The Pencil Test is specifically for the 3rd and 4th metatarsals, but can also be used for any metatarsal space; implication is a Morton's Neuroma.",
         "Evidence": "N/A",
-        "Evidence Resource": ""
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Tarsal Twist Test (Dorsiflexion-Eversion Test)",
@@ -121,7 +121,7 @@ export default [
             "Sensitivity: 81%",
             "Specificity: 99%"
         ],
-        "Evidence Resource": "book"
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Mulder Sign",
@@ -140,7 +140,7 @@ export default [
             "Sensitivity: 99%",
             "Specificity: 50%"
         ],
-        "Evidence Resource": "book"
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Valgus Stress Test (IP Joint)",
@@ -153,7 +153,7 @@ export default [
         "Implications": "Collateral ligament sprain.",
         "Modifications/Comments": "N/A",
         "Evidence": "N/A",
-        "Evidence Resource": ""
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     },
     {
         "Name": "Varus Stress Test (IP Joint)",
@@ -166,6 +166,6 @@ export default [
         "Implications": "Collateral ligament sprain.",
         "Modifications/Comments": "N/A",
         "Evidence": "N/A",
-        "Evidence Resource": ""
+        "Evidence Resource": "Konin, Jeff G., et al. Special Tests for Orthopedic Examination. 4th ed. SLACK Incorporated; 2016."
     }
 ]

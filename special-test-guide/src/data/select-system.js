@@ -31,5 +31,7 @@ export default function selectSystem(param) {
             return elbow;
         case "Wrist & Hand":
             return wristAndHand;
+        default:
+            return null;
     }
 }

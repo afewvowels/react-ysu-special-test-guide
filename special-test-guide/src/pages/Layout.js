@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import { Switch, Redirect, Route, Router } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -18,6 +18,10 @@ import footAndToe from '../data/foot-and-toe';
 const customHistory = createBrowserHistory();
 
 const GlobalStyle = createGlobalStyle`
+    * {
+        cursor: default;
+    }
+
     body {
         font-family: 'Ubuntu', sans-serif;
         color: white;
@@ -29,7 +33,31 @@ const GlobalStyle = createGlobalStyle`
         background-color: #1A1423;
     }
 
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h1 > a, h1 > a:visited, h1 > a:active, h1 > a:hover,
+    h2 > a, h2 > a:visited, h2 > a:active, h2 > a:hover {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
     .link, .link:visited, .link:active, .link:hover {
+        text-decoration: none;
         border-radius: 0.5rem;
         border: 1px solid white;
         box-sizing: border-box;
@@ -37,6 +65,7 @@ const GlobalStyle = createGlobalStyle`
         color: white;
         padding: 0.5rem;
         font-size: 1.25rem;
+        cursor: pointer;
     }
 
     .link:hover, .link:active {
@@ -48,8 +77,7 @@ const GlobalStyle = createGlobalStyle`
         color: #3D314A;
     }
 
-    .title {
-        font-size: 2.0rem;
+    .title, h2, h3, h4 {
         margin: 0.5rem 0 0 0;
     }
 
@@ -103,7 +131,7 @@ export default function Layout() {
                     <Route
                         exact path={`${name[1]}${exercises.URL}`}
                         key={`${name[1]}${exercises.URL}`}
-                        render={routeProps => <Exercise {...routeProps} system={name[0]} exerciseName={exercises.Name} />}
+                        render={routeProps => <Exercise {...routeProps} systemName={name[0]} systemURL={name[1]} exerciseName={exercises.Name} />}
                     />
                 );
             })
@@ -117,7 +145,7 @@ export default function Layout() {
                 <Route exact path='/' component={Home} />
                 {systemRoutes}
                 {systemExercises}
-                <Route render={() => <div>404 Page Not Found</div>} />
+                <Route render={() => <h2>404 Page Not Found</h2>} />
             </Switch>
             <Footer />
             <GlobalStyle />
