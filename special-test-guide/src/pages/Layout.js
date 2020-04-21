@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import { createGlobalStyle } from 'styled-components';
@@ -139,7 +139,7 @@ export default function Layout() {
     });
 
     return (
-        <Router history={customHistory}>
+        <HashRouter history={customHistory}>
             <Header />
             <Switch>
                 <Route exact path='/' component={Home} />
@@ -149,6 +149,6 @@ export default function Layout() {
             </Switch>
             <Footer />
             <GlobalStyle />
-        </Router>
+        </HashRouter>
     );
 }
