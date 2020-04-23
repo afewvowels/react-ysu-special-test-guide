@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import { createGlobalStyle } from 'styled-components';
@@ -139,7 +139,7 @@ export default function Layout() {
     });
 
     return (
-        <HashRouter history={customHistory}>
+        <Router history={customHistory}>
             <Header />
             <Route exact path='/' component={Home} />
             {systemRoutes}
@@ -147,6 +147,6 @@ export default function Layout() {
             <Route render={() => <h2>404 Page Not Found</h2>} />
             <Footer />
             <GlobalStyle />
-        </HashRouter>
+        </Router>
     );
 }
