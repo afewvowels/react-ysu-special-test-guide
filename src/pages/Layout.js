@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import { createGlobalStyle } from 'styled-components';
@@ -141,10 +141,12 @@ export default function Layout() {
     return (
         <Router history={customHistory}>
             <Header />
-            <Route exact path='/' component={Home} />
-            {systemRoutes}
-            {systemExercises}
-            <Route render={() => <h2>404 Page Not Found</h2>} />
+            <Switch>
+                <Route exact path='/' component={Home} />
+                {systemRoutes}
+                {systemExercises}
+                <Route render={() => <h2>404 Page Not Found</h2>} />
+            </Switch>
             <Footer />
             <GlobalStyle />
         </Router>
