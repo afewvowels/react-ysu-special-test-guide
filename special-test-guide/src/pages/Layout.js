@@ -141,12 +141,10 @@ export default function Layout() {
     return (
         <HashRouter history={customHistory}>
             <Header />
-            <Switch>
-                <Route exact path='/' component={Home} />
-                {systemRoutes}
-                {systemExercises}
-                <Route render={() => <h2>404 Page Not Found</h2>} />
-            </Switch>
+            <Route exact path='/' component={Home} />
+            {systemRoutes}
+            {systemExercises}
+            <Route render={() => <h2>404 Page Not Found</h2>} />
             <Footer />
             <GlobalStyle />
         </HashRouter>
