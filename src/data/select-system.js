@@ -1,13 +1,13 @@
-import footAndToe from '../data/foot-and-toe';
-import ankle from '../data/foot-and-toe';
-import knee from '../data/foot-and-toe';
-import headAndFace from '../data/foot-and-toe';
-import hipAndPelvis from '../data/foot-and-toe';
-import cervicalSpine from '../data/foot-and-toe';
-import thoracicAndLumbarSpine from '../data/foot-and-toe';
-import shoulder from '../data/foot-and-toe';
-import elbow from '../data/foot-and-toe';
-import wristAndHand from '../data/foot-and-toe';
+import footAndToe from '../data/foot-and-toe.js';
+import ankle from '../data/ankle.js';
+import knee from '../data/knee.js';
+import headAndFace from '../data/head-and-face.js';
+import hipAndPelvis from '../data/hip-and-pelvis.js';
+import cervicalSpine from '../data/cervical-spine.js';
+import thoracicAndLumbarSpine from '../data/thoracic-and-lumbar-spine.js';
+import shoulder from '../data/shoulder.js';
+import elbow from '../data/elbow.js';
+import wristAndHand from '../data/wrist-and-hand.js';
 
 export default function selectSystem(param) {
     switch(param) {

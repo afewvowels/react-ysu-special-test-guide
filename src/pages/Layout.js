@@ -13,9 +13,13 @@ import Exercises from './Exercises';
 import Home from './Home';
 
 import systemsList from '../data/systems';
-import footAndToe from '../data/foot-and-toe';
+import selectSystem from '../data/select-system';
 
 const customHistory = createBrowserHistory({ basename: process.env.PUBLIC_URL });
+
+customHistory.listen(_ => {
+    window.scrollTo(0, 0);
+});
 
 const GlobalStyle = createGlobalStyle`
     * {
@@ -113,7 +117,7 @@ const GlobalStyle = createGlobalStyle`
 
 export default function Layout() {
     const systemsArr = systemsList.systems;
-    
+
     const systemRoutes = systemsArr.map((name) => {
         return (
             <Route
@@ -124,9 +128,11 @@ export default function Layout() {
         );
     });
 
-    const systemExercises = systemsArr.map((name) =>{
+    const systemExercises = systemsArr.map((name) => {
+        let activeSystem = selectSystem(name[0]);
+
         return (
-            footAndToe.map((exercises) => {
+            activeSystem.map((exercises) => {
                 return (
                     <Route
                         exact path={`${name[1]}${exercises.URL}`}

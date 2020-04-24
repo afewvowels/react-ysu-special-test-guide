@@ -54,13 +54,33 @@ export default function Exercise(props) {
 
         function body() {
             if (!Array.isArray(value)) {
-                return <p>{value}</p>;
+                if (key !== "Evaluation Procedure Image") {
+                    return <p>{value}</p>;
+                } else {
+                    var name = JSON.stringify(props.systemURL);
+                    name = name.substring(2, name.length - 1);
+                    return (
+                        <img src={`../img/${name}/${value}`} width='100%' height='auto' alt={`${props.exerciseName}`} title='Evaluation Procedure Image' />
+                    );
+                }
             } else if (Array.isArray(value) && key === "Evaluation Procedure") {
                 return (
                     <ol>
                         {
                             value.map((item) => {
-                                return <li key={item}>{item}</li>;
+                                if (!Array.isArray(item)) {
+                                    return <li key={item}>{item}</li>;
+                                } else {
+                                    return(
+                                        <ul>
+                                            {
+                                                item.map((subitem) => {
+                                                    return <li key={subitem}>{subitem}</li>
+                                                })
+                                            }
+                                        </ul>
+                                    );
+                                }
                             })
                         }
                     </ol>
@@ -70,7 +90,19 @@ export default function Exercise(props) {
                     <ul>
                         {
                             value.map((item) => {
-                                return <li key={item}>{item}</li>;
+                                if (!Array.isArray(item)) {
+                                    return <li key={item}>{item}</li>;
+                                } else {
+                                    return(
+                                        <ul>
+                                            {
+                                                item.map((subitem) => {
+                                                    return <li key={subitem}>{subitem}</li>
+                                                })
+                                            }
+                                        </ul>
+                                    );
+                                }
                             })
                         }
                     </ul>
@@ -78,7 +110,7 @@ export default function Exercise(props) {
             }
         }
 
-        if (key !== "URL") {
+        if (key !== "URL" && value !== "") {
             return (
                 <StyledSection className='section' key={exercise[0]}>
                     {title()}
