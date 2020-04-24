@@ -15,7 +15,7 @@ import Home from './Home';
 import systemsList from '../data/systems';
 import footAndToe from '../data/foot-and-toe';
 
-const customHistory = createBrowserHistory();
+const customHistory = createBrowserHistory({ basename: process.env.PUBLIC_URL });
 
 const GlobalStyle = createGlobalStyle`
     * {

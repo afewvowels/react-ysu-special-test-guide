@@ -2,12 +2,13 @@
   "name": "special-test-guide",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://keithbsmith.me/demo/special-test-guide",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-dev": "^2.0.0",
     "eslint-config-developit": "^1.2.0",
     "history": "^4.10.1",
@@ -17,7 +18,7 @@
     "react-helmet": "^6.0.0",
     "react-onclickoutside": "^6.9.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.1",
     "styled-components": "^5.1.0",
     "typescript": "^3.8.3"
   },
