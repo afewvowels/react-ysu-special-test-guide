@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import BackLinkStyle from '../Themes/BackLinkStyle';
 
@@ -91,6 +92,10 @@ export default function Exercise(props) {
 
     return (
         <>
+            <Helmet>
+                <title>{props.exerciseName} | {props.systemName} | Special Test Guide</title>
+                <link rel='canonical' href='https://keithbsmith.me/demo/special-test-guide' />
+            </Helmet>
             <BackLinkStyle />
             <h2><Link className="back-link" to={props.systemURL}>{props.systemName}</Link></h2>
             <h3>{props.exerciseName}</h3>
