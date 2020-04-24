@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+import BackLinkStyle from '../Themes/BackLinkStyle';
+
 import selectSystem from '../data/select-system';
 
 const StyledSection = styled.div`
@@ -89,7 +91,8 @@ export default function Exercise(props) {
 
     return (
         <>
-            <h2><Link to={props.systemURL}>{props.systemName}</Link></h2>
+            <BackLinkStyle />
+            <h2><Link className="back-link" to={props.systemURL}>{props.systemName}</Link></h2>
             <h3>{props.exerciseName}</h3>
             {html}
         </>
