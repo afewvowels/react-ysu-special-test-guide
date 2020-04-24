@@ -1,3 +1,21 @@
+# PWA Installation Guide
+
+Here's a quick guide to getting this new app onto your phone:
+
+### Android
+1. Open the url on your Android device.
+2. Tap on the banner at the bottom of the screen that says "Add Test Guide to Home screen" and follow the prompts
+3. Check your home screen for your installed "app"!
+
+### iOS
+1. Open the url in Safari (can't add to home screen from Chrome or Firefox)
+2. Tap the icon at the bottom of the screen that is an arrow emerging from a box
+3. Select "Add to Home Screen" and follow the prompts
+4. Go to your home screen and tap on the "app" icon to open it up!
+
+
+# Original React Readme.md
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
